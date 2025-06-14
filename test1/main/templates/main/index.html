@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Мурат</title>
+    <link rel="stylesheet" href="{% static 'main/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'home' %}">Portfolio</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>I'm <span class="highlight">Murat</span></h1>
+            <p>Front-End & Java developer</p>
+            <button class="btn">Contact Me</button>
+        </div>
+        <!-- <div class="hero-img">
+          <img src="./img/Me.jpeg" alt="Murat">
+        </div> -->
+    </section>
+
+    <section class="about">
+        <h2>About</h2>
+        <p>
+          Strong knowledge of Ubuntu Linux, front-end development, <br>
+          Java, and JavaScript has been developed through practical <br>
+          experience and coursework. Currently a student at Manas University, <br>
+          focusing on these areas to deepen understanding and skills. <br>
+          Continuous learning and applying new technologies are key <br>
+          aspects of professional growth, with a focus on real-world projects. <br>
+        </p>
+    </section>
+
+    <section class="skills">
+  <h2>My Skills</h2>
+  <div class="skills-grid">
+    <div class="skill"><img src="{% static 'main/img/java.png' %}" alt=""><p>Java</p></div>
+    <div class="skill"><img src="{% static 'main/img/figma.png' %}" alt=""><p>Figma</p></div>
+    <div class="skill highlight"><img src="{% static 'main/img/ubuntu.png' %}" alt=""><p>Ubuntu</p></div>
+    <div class="skill"><img src="{% static 'main/img/social.png' %}" alt=""><p>Git Source Control</p></div>
+    <div class="skill"><img src="{% static 'main/img/media.png' %}" alt=""><p>Bootstrap</p></div>
+    <div class="skill"><img src="{% static 'main/img/icons8-spring-boot-96.png' %}" alt=""><p>Spring Boot</p></div>
+    <div class="skill img"><img src="{% static 'main/img/htmlcss-removebg-preview.png' %}" alt=""><p>HTML & CSS</p></div>
+    <div class="skill"><img src="{% static 'main/img/js.png' %}" alt=""><p>JavaScript</p></div>
+    <div class="skill"><img src="{% static 'main/img/science.png' %}" alt=""><p>React</p></div>
+    <div class="skill"><img src="{% static 'main/img/database.png' %}" alt=""><p>MySQL</p></div>
+  </div>
+</section>
+
+    <footer>
+        <p>© 2024 Murat. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+/* Шапка */
+header {
+    padding: 20px 0;
+}
+/* Навигация */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-left: -40px;
+}
+
+nav ul li {
+    margin: 0 15px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: orange;
+    text-decoration: none;
+}

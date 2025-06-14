@@ -1,0 +1,38 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+    background: rgb(52, 53, 58);
+    color: white;
+}
+.header{
+    margin-top: 4px;
+}
+h1 {
+    color: white;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+blockquote {
+    font-style: italic;
+    color: #c5c1c1;
+    border-left: 4px solid #ccc;
+    padding-left: 10px;
+    margin: 20px 0;
+}
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+section{
+    max-width: 800px;
+    margin: 0 auto;
+}

@@ -1,0 +1,85 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/contact.css' %}">
+    
+
+    <title>contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'home' %}">Portfolio</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Обо мне</h1>
+        <div class="code">
+            <span class="comment">// Я могу, потому что я сделал это.</span>
+            <span class="comment">// Мои навыки постоянно расширяются.</span>
+            <br>
+            <span class="keyword">class</span> <span class="property">МойПуть</span> {</span>
+            <br>
+            <span class="keyword">constructor</span>() {</span>
+            <br>
+            <span class="property">this.name</span> = <span class="string">" Murat"</span>;</span>
+            <br>
+            <span class="property">this.dayOfBirthTimestamp</span> = <span class="string">19</span>;</span>
+            <br>
+            <span class="property">this.email</span> = <span class="string">"muratturdaliev@gmail.com"</span>;</span>
+            <br>
+            }
+            <br>
+            <span class="property">workExperience</span>() {</span>
+            <br>
+            <span class="keyword">return</span> [</span>
+            <br>
+            <span class="string">'2023-now : Frontend Developer at '</span>,</span>
+            <br>
+            <span class="string">'2021-2023 : Web Developer at '</span>,</span>
+            <br>
+            <span class="string">'2019-2021 : Junior Developer at '</span></span>
+            <br>
+            ];
+            <br>
+            }
+            <br>
+            <span class="property">education</span>() {</span>
+            <br>
+            <span class="keyword">return</span> [</span>
+            <br>
+            <span class="string">'2023-2025: Bachelor's in Computer Science at KTMU'</span></span>
+            <br>
+            ];
+            <br>
+            }
+            <br>
+            <span class="property">skills</span>() {</span>
+            <br>
+            <span class="keyword">return</span> [</span>
+            <br>
+            <span class="string">'HTML/CSS/JS', 'Vue', 'Node.js', 'React', 'Docker', 'AWS', 'GCP', 'TypeScript', 'MongoDB'</span></span>
+            <br>
+            ];
+            <br>
+            }
+            <br>
+            }
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Murat. All rights reserved.</p>
+    </footer>
+</body>
+</html>
