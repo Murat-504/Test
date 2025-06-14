@@ -1,6 +1,15 @@
 from django.contrib import admin
-from .models import Task
-# Register your models here.
+from .models import Category, Product
 
 
-admin.site.register(Task)
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ['name', 'slug']
+    prepopulated_fields = {'slug': ('name',)}
+
+@admin.register(Product)
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ['name', 'category', 'price', 'available', 'created', 'update']
+    list_filter = ['available', 'created', 'update', 'category']
+    list_editable = ['price', 'available']
+    prepopulated_fields = {'slug': ('name',)}
